@@ -5,6 +5,10 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
   exit 0
 fi
 
+# ── Register Zapier-MCP ─────────────────────────────────────────────────────
+claude mcp add --transport http --scope user "Zapier-MCP" https://mcp.zapier.com/api/v1/connect 2>/dev/null || true
+echo "✓ Zapier-MCP registered"
+
 # Install nginx if missing
 if ! command -v nginx &>/dev/null; then
   apt-get update -qq && apt-get install -y nginx
