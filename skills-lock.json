@@ -78,6 +78,12 @@
       "skillPath": "skills/frontend-ui-engineering/SKILL.md",
       "computedHash": "917f6cf8c3d694c2b145463799ee492a2b88d7bf22ff479e08111d3ea5501e65"
     },
+    "genai-sdk": {
+      "source": "GoogleCloudPlatform/vertex-ai-samples",
+      "sourceType": "github",
+      "skillPath": "skills/genai-sdk/SKILL.md",
+      "computedHash": "1aa5b4a230e0a5eae07824a115fbe66bafc0f49474b6b8aa1b47a55a9e3945a4"
+    },
     "git-workflow-and-versioning": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -114,6 +120,12 @@
       "skillPath": "skills/planning-and-task-breakdown/SKILL.md",
       "computedHash": "6ee11641fc8d8f299a6acb3a10976e7e50719ad012290123e11ec34a525b4cc0"
     },
+    "quality-flywheel": {
+      "source": "GoogleCloudPlatform/vertex-ai-samples",
+      "sourceType": "github",
+      "skillPath": "skills/quality-flywheel/SKILL.md",
+      "computedHash": "6495e0929091e71b9bb1ffd5aa765b60fe9388699b9cf62d049771440ae09dbc"
+    },
     "security-and-hardening": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
@@ -149,6 +161,12 @@
       "sourceType": "github",
       "skillPath": "skills/using-agent-skills/SKILL.md",
       "computedHash": "c6626f8f65808382750cba741c4fc4fdcad132e23d1ecf871deffe34f2ecf996"
+    },
+    "vertex-ai": {
+      "source": "GoogleCloudPlatform/vertex-ai-samples",
+      "sourceType": "github",
+      "skillPath": "skills/vertex-ai/SKILL.md",
+      "computedHash": "361cf75bb78e1709c6fbeaf5de5e3308bc7d2075b985573b4d29056b1b76b479"
     }
   }
 }
