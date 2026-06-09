@@ -18,10 +18,23 @@ make dev > /tmp/deerflow-dev.log 2>&1 &
 for i in $(seq 1 60); do
   if curl -s http://localhost:2026/health | grep -q "healthy"; then
     echo "DeerFlow is running at http://localhost:2026"
-    exit 0
+    break
   fi
   sleep 1
 done
 
-echo "WARNING: DeerFlow did not start within 60s — check /tmp/deerflow-dev.log"
+# Start localtunnel and expose public URL
+echo "Starting localtunnel..."
+npx localtunnel --port 2026 > /tmp/localtunnel.log 2>&1 &
+sleep 5
+
+PUBLIC_URL=$(grep -o 'https://[^ ]*' /tmp/localtunnel.log | head -1)
+if [ -n "$PUBLIC_URL" ]; then
+  echo "Public URL: $PUBLIC_URL"
+  # Persist URL for the session
+  echo "export DEERFLOW_PUBLIC_URL=$PUBLIC_URL" >> "${CLAUDE_ENV_FILE:-/tmp/claude_env}"
+else
+  echo "WARNING: Could not get public URL — check /tmp/localtunnel.log"
+fi
+
 exit 0
