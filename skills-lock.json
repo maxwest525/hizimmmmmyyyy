@@ -108,6 +108,12 @@
       "skillPath": "skills/interview-me/SKILL.md",
       "computedHash": "efded91ac7f7626239b338ce8622afeb557151b86532b632f3c9eb5b2ff9048f"
     },
+    "material-component-doc": {
+      "source": "bytedance/flowgram.ai",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/material-component-doc/SKILL.md",
+      "computedHash": "3b018032ccb6676188de94bcbc055bf30b7256c078f122d09d0515220b02dfbc"
+    },
     "performance-optimization": {
       "source": "addyosmani/agent-skills",
       "sourceType": "github",
